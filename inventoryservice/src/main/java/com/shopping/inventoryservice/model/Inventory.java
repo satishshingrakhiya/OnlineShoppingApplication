@@ -8,12 +8,12 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "inventory")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class Inventory {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String skuCode;
-    private int quantity;
+    private Integer quantity;
 }
